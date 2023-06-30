@@ -9,6 +9,8 @@ import {UserContextProvider} from "./UserContext.jsx";
 import AccountPage from "./pages/AccountPage";
 import PlacePage from "./pages/PlacesPage";
 import ProfileSetting from "./pages/ProfileSetting";
+import SalesPage from "./pages/SalesPage";
+import MarketingPage from "./pages/MarketingPage";
 
 axios.defaults.baseURL = 'http://127.0.0.1:4000';
 axios.defaults.withCredentials=true;
@@ -26,6 +28,8 @@ function App() {
         <Route path='/account/:subpage?' element={<AccountPage/>}/>
         <Route path='/account/:subpage?/:action' element={<PlacePage/>}/>
         <Route path='/profileSetting' element={<ProfileSetting/>}/>
+        <Route path ='/sales' element ={<SalesPage/>}/>
+        <Route path = '/account/marketing' element ={<MarketingPage/>}/>
         
         </Route>
       </Routes>
