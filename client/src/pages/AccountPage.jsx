@@ -20,22 +20,18 @@ export default function AccountPage() {
     return <Navigate to={"/login"} />;
   }
 
-
-
-
   async function logout() {
     await axios.post("/logout");
     setRedirect("/");
     setUser(null);
   }
- 
+
   function linkClasses(type = null) {
     let classes = "inline-flex gap-1 py-2 px-6 rounded-full";
     if (type === subpage) {
       classes += " bg-primary  text-white";
-    }
-    else{
-        classes += " bg-gray-200";
+    } else {
+      classes += " bg-gray-200";
     }
     return classes;
   }
@@ -65,7 +61,8 @@ export default function AccountPage() {
         </Link>
 
         <Link className={linkClasses("sales")} to={"/sales"}>
-          <svg
+            <svg
+            className="inline-flex gap-1 py-2 px-6 rounded-full"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -103,17 +100,26 @@ export default function AccountPage() {
       {subpage === "profile" && (
         <div className="text-center max-w-lg mx-auto">
           <div className="flex flex-col px-10 py-10">
-            <span className="px-3 py-2">Name - {user.name}<br/></span>
-            <span className="px-3 py-2">Department - {user.department}<br/></span>
-            <span className="px-3 py-2">Designation - {user.designation}<br/></span>
+            <span className="px-3 py-2">
+              Name - {user.name}
+              <br />
+            </span>
+            <span className="px-3 py-2">
+              Department - {user.department}
+              <br />
+            </span>
+            <span className="px-3 py-2">
+              Designation - {user.designation}
+              <br />
+            </span>
             <span className="px-3 py-2">EmployeeID - {user.employeeID}</span>
           </div>
           <div>
-          <Link to="/profileSetting">
-          <button className="primary max-w-sm mt-2 mb-5">
-            Edit Your Profile 
-          </button>
-          </Link>
+            <Link to="/profileSetting">
+              <button className="primary max-w-sm mt-2 mb-5">
+                Edit Your Profile
+              </button>
+            </Link>
           </div>
           Logged in as {user.name} ({user.email})<br />
           <button onClick={logout} className="primary max-w-sm mt-5">

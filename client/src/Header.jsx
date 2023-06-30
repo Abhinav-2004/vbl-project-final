@@ -23,29 +23,7 @@ export default function Header() {
           </svg>
           <span className="font-bold text-xl">airbnc</span>
         </Link>
-        <div className="flex gap-2 border border-gray-300 rounded-full py-2 px-5 shadow-md shadow-gray-300 font-bold">
-          <div>Anywhere</div>
-          <div className="border-l border-grey-300"></div>
-          <div>Any week</div>
-          <div className="border-l border-grey-300"></div>
-          <div>Add guests</div>
-          <button className="bg-primary text-white p-2 rounded-full">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-4 h-4"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-          </button>
-        </div>
+        
         <Link to ={user?'/account':'/login'}className="flex items-center gap-2 border border-gray-300 rounded-full py-2 px-5 shadow-md font-bold">
           <svg
             xmlns="http://www.w3.org/2000/svg"
