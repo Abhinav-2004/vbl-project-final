@@ -7,7 +7,7 @@ import Layout from "./Layout";
 import axios from 'axios';
 import {UserContextProvider} from "./UserContext.jsx";
 import AccountPage from "./pages/AccountPage";
-import PlacePage from "./pages/PlacesPage";
+
 import ProfileSetting from "./pages/ProfileSetting";
 import SalesPage from "./pages/SalesPage";
 import MarketingPage from "./pages/MarketingPage";
@@ -26,7 +26,6 @@ function App() {
         <Route path = "/login" element = {<LoginPage/>}/>
         <Route path = "/register" element = {<RegisterPage/>}/>
         <Route path='/account/:subpage?' element={<AccountPage/>}/>
-        <Route path='/account/:subpage?/:action' element={<PlacePage/>}/>
         <Route path='/profileSetting' element={<ProfileSetting/>}/>
         <Route path ='/sales' element ={<SalesPage/>}/>
         <Route path = '/account/marketing' element ={<MarketingPage/>}/>
