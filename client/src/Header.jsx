@@ -8,7 +8,7 @@ export default function Header() {
         <header className="flex justify-between">
         <Link to ={'/'} className="flex items-center gap-1">
         <img src = {logo1} className='h-12 w-18' alt="none"/>
-          <span className="font-bold text-xl ">Varun Beveraged Limited</span>
+          <span className="font-bold text-xl ">Varun Beverages Limited</span>
         </Link>
         
         <Link to ={user?'/account':'/login'}className="flex items-center gap-2 border border-gray-300 rounded-full py-2 px-5 shadow-md font-bold">
