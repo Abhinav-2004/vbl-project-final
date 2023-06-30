@@ -1,8 +1,9 @@
-
+import BgImage from '../VblBg.png';
+import "../IndexPage.css"
 export default function IndexPage() {
   return (
     <div>
-      index page here
+      <img src = {BgImage} alt = "" className="imagecss"/>
     </div>
   );
 }
