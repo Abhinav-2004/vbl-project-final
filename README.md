@@ -1,12 +1,17 @@
 # booking-site
-List of dependencies
+<div>Open a New terminal in this directory</div>
+ <div>cd api
+   <div>
+     -->run:nodemon index.js
+   </div>
+ </div>
 
-1)npm install --global yarn
-2) yarn create vite client
-3)select framework - react->javascript
-4)cd client
-  yarn
-  yarn dev
-ctrl^c to stop server
-5)yarn add tailwindcss postcss autoprefixer
-6)npx tailwindcss init -p
+ <div>Open a another terminal in this directory</div>
+ <div>cd client
+   <div>
+     -->run:yarn run dev
+   </div>
+ </div>
+
+
+
